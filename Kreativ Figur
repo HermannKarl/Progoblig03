@@ -1,0 +1,11 @@
+allignment1 = square(400, "solid", "transparent")
+allignment2 = square(200, "solid", "transparent")
+blue = square(100, "solid", "blue")
+red = square(100, "solid", "red")
+green = square(100, "solid", "green")
+
+underlay((allignment1),
+  underlay((allignment2),
+    underlay-xy((blue), -100, -100,
+      underlay-xy((red), 50, -100,
+        underlay-xy((green), 50, 100, empty-image)))))
